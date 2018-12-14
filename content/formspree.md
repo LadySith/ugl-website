@@ -5,7 +5,7 @@ menuname = "Contact 2"
 draft = true
 +++
 
-<form id="contactform" method="post" action="https://formspree.io/insert.your@mail.adress">
+<form id="contactform" method="post" action="https://formspree.io/sithe@ubongogamelab.com">
 	<div class="field half first">
 		<input type="text" name="name" id="name" placeholder="Name"/>
 	</div>
@@ -26,7 +26,7 @@ draft = true
 <span id="contactformsent">Thank you for your message</span>
 
 <script>
-$(document).ready(function($) { 
+$(document).ready(function($) {
     $(function(){
         if (window.location.search == "?sent") {
         	$('#contactform').hide();
