@@ -1,37 +1,63 @@
-baseurl = "http://ubongogamelab.com"
 title = "Ubongo Game Lab"
-theme = "dimension"
-languageCode = "en-us"
-defaultContentLanguage = "en"
-enableRobotsTXT = true
-disableKinds=["RSS"]
+baseURL = "https://ubongogamelab.com"
+tags = ["portfolio", "company", "blog"]
+languageCode = "en-US"
+config = "config.toml"
+theme = "osprey"
+canonifyURLS = true
+googleAnalytics = ""
+disqusShortname = "sithannettencube"
+disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
-[params]
-  description = 'At Ubongo Game Lab, we’re actively interested in facilitating the growth of game development within Zambia and Sub-Saharan Africa through workshops, training and providing resources to game developers within the region.'
-  logo = "fa-gamepad"
-  copyright = "Ubongo Game Lab"
+[Params]
+  tagline = "conscious minds, conscious play"
+  author = "Sithe Ncube"
+  description = "A game development organisation and community in Zambia and Sub-Saharan Africa"
+  logoBig = "/images/ugltp.png"
+  logoSmall = "/images/ugltp.png"
+  favicon = "favicon.ico"
+  opengraphImage = "/images/ugltp.png"
+  email = "sithe@ubongogamelab.com"
+  googleTagManger = ""
+  customCSS = false
 
-[[params.social]]
-  medium = "twitter"
-  icon = "twitter"
-  link = "https://twitter.com/UbongoGameLab"
+  # Social media links in footer
+  twitter = "UbongoGameLab"
+  linkedin = ""
+  github = ""
+  facebook = "UbongoGameLab"
 
-[[params.social]]
-  medium = "facebook"
-  icon = "facebook"
-  link = "https://www.facebook.com/UbongoGameLab"
+  # Copyright and theme author credit in footer
+  copyright = false
+  credit = false
 
-[[params.social]]
-  medium = "instagram"
-  icon = "instagram"
-  link = "#"
+  # Cache busting of static resources (additional set up required)
+  cacheBustCSS = false
+  cacheBustJS = false
 
-[[params.social]]
-  medium = "github"
-  icon = "github"
-  link = "#"
+  # Code highlighting with highlight.js
+  highlightJS = true
+  highlightJSStyle = "" # For custom highlight.js styles, add your /path/to/styles/default.css
+  highlightJSScript = "" # For custom highlight.js languages config, add your /path/to/highlight.pack.js
 
-[languages]
-[languages.en]
-languageName = "English"
-weight = 1
+  # Choose either Formspree contact form or Basin contact form
+  ajaxFormspree = true
+  ajaxFormspreeGold = false
+  ajaxBasin = "https://usebasin.com/f/0eae7044d4c2"
+
+[[menu.main]]
+  name = "About"
+  url  = "/#about"
+  weight = 1
+[[menu.main]]
+  name = "Projects"
+  url  = "/#work"
+  weight = 2
+[[menu.main]]
+  name = "Blog"
+  url  = "/#blog"
+  weight = 3
+[[menu.main]]
+  name = "Contact"
+  url  = "/#contact"
+  weight = 4
